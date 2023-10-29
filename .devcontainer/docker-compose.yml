@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+
+  rust:
+    image: rust
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rust
+    command: /bin/sh -c "while sleep 1000; do :; done"  
+    user: developer
+    volumes:
+      - $HOME/DEV/RUST-projects:/workspace:cached

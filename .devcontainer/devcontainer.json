@@ -1,0 +1,17 @@
+{
+  "name": "Rust",
+  // "build": { "dockerfile": "Dockerfile" },
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "rust",
+  "workspaceFolder": "/workspace",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+		"esbenp.prettier-vscode",
+	]
+    }
+  },
+
+  // "forwardPorts": [3000]
+}
